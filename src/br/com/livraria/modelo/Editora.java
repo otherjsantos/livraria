@@ -1,5 +1,6 @@
 package br.com.livraria.modelo;
 
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -14,6 +15,8 @@ public class Editora {
 	
 	private Endereco endereco;
 	private Contato contato;
+	
+	@Embedded
 	private Gerente gerente;
 	
 }
